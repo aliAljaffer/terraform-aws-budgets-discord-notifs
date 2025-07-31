@@ -1,5 +1,6 @@
 resource "aws_sns_topic" "budget_notifications" {
-  name = "budget-notifications-for-Discord-alerts"
+  name       = "budget-notifications-for-Discord-alerts"
+  depends_on = [var.lambda_function_arn]
 }
 
 resource "aws_sns_topic_subscription" "budget_lambda_subscription" {
