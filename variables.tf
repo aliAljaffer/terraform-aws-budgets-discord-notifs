@@ -26,9 +26,10 @@ variable "limit_amount" {
   description = "Amount to use in `limit_unit` units. See: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_budgets_Spend.html"
 }
 variable "budget_threshold" {
-  type      = number
-  sensitive = false
-  default   = 85
+  type        = number
+  sensitive   = false
+  default     = 85
+  description = "Threshold (as percentage by default) after which the Budget Alert triggers"
 }
 variable "limit_unit" {
   type        = string

@@ -33,7 +33,7 @@ The Lambda function is under `modules/lambda/function/main.py`, feel free to mod
 Only the `requests` Python library is needed for the current version. A `local-exec` provisioner runs `pip install` on the `requirements.txt` file.
 
 - requests
-- Python 3.13
+- Python 3.13 & pip
 - terraform
 
 ## Installation
@@ -47,5 +47,3 @@ Only the `requests` Python library is needed for the current version. A `local-e
 4. Run `terraform plan` and make sure the plan looks fine and is error-free
 
 5. Run `terraform apply` and you should be good to go!
-
-##
