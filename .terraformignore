@@ -1,1 +1,4 @@
-secrets.tfvars
+secrets.*
+*.tfstate*
+*.zip
+.DS_Store

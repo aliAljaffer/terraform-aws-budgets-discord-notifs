@@ -1,1 +1,12 @@
 secrets.*
+*.tfstate*
+*.tfvars
+*.zip
+**/**/python/
+modules/lambda/function/*
+!modules/lambda/function/main.py
+!modules/lambda/function/requirements.txt
+.terraform/
+.DS_Store
+!terraform.auto.tfvars
+!secrets.example.auto.tfvars
